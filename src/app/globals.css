@@ -1,27 +1,60 @@
+@import "../styles/theme.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  body {
+    background: var(--c-paper);
+    color: var(--c-ink);
+    font-family: var(--font-sans);
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: -0.005em;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  button {
+    font-family: inherit;
+    cursor: pointer;
+  }
+
+  img {
+    -webkit-user-drag: none;
+    user-select: none;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.font-display {
+  font-family: var(--font-anton), "Anton", Impact, sans-serif !important;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.font-serif {
+  font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif !important;
+}
+
+.font-mono {
+  font-family: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace !important;
+}
+
+.font-sans {
+  font-family: var(--font-dm-sans), "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+@media (min-width: 1440px) {
+  .px-5, .px-8 {
+    padding-left: calc((100vw - 1400px) / 2 + 2rem) !important;
+    padding-right: calc((100vw - 1400px) / 2 + 2rem) !important;
   }
 }

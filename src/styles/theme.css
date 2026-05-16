@@ -1,0 +1,65 @@
+/*
+ * Theme Variables - Louise Leroux · Magazine Personnel
+ * =====================================================
+ * Palette inspirée des hortensias — icy hydrangea
+ * Pas de dark mode. Éditorial, moderne, artistique.
+ */
+
+:root {
+    /* ==========================================
+   * COULEURS DE BASE — Hydrangea palette
+   * ========================================== */
+    --c-primary: #c2d4ec;   /* icy hydrangea */
+    --c-dark: #1f2858;       /* deep blueberry */
+    --c-fog: #e6e1ef;        /* lavender fog */
+    --c-sage: #cfddcb;       /* celadon sage */
+    --c-cream: #f6f3ec;      /* warm cream */
+    --c-ink: #0b0d18;        /* near-black */
+    --c-paper: #fbfaf6;      /* warm paper white */
+    --c-paper-2: #ffffff;
+    --c-mute: #6f6c7d;       /* muted text */
+
+    /* Semantic tokens (Tailwind compat) */
+    --background: var(--c-paper);
+    --foreground: var(--c-ink);
+    --primary: var(--c-primary);
+    --primary-foreground: var(--c-ink);
+    --secondary: var(--c-dark);
+    --secondary-foreground: var(--c-cream);
+    --accent: var(--c-fog);
+    --accent-foreground: var(--c-ink);
+    --muted: var(--c-fog);
+    --muted-foreground: var(--c-mute);
+    --border: var(--c-ink);
+
+    /* ==========================================
+   * TYPOGRAPHIE
+   * ========================================== */
+    --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+    --font-display: var(--font-anton), "Anton", Impact, sans-serif;
+    --font-sans: var(--font-dm-sans), "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-mono: var(--font-jetbrains), "JetBrains Mono", ui-monospace, monospace;
+
+    /* ==========================================
+   * SPACING
+   * ========================================== */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+
+    /* ==========================================
+   * LAYOUT
+   * ========================================== */
+    --container-max-width: 1400px;
+
+    /* ==========================================
+   * TRANSITIONS
+   * ========================================== */
+    --transition-fast: 150ms ease;
+    --transition-normal: 200ms ease;
+    --transition-slow: 300ms ease;
+}
