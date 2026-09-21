@@ -13,6 +13,7 @@ type Strip = {
 };
 
 const STRIPS: Strip[] = [
+  { no: "12", slug: "page-blanche", title: "Page blanche", panels: 11, ext: "webp" },
   { no: "11", slug: "voyage-au-japon", title: "Voyage au Japon", panels: 10, ext: "png" },
   { no: "10", slug: "mon-nouveau-metier", title: "Mon nouveau métier", panels: 10, ext: "jpg" },
   { no: "09", slug: "la-vie-a-paris", title: "La vie à Paris", panels: 10, ext: "jpg" },
@@ -181,7 +182,7 @@ function Archive({ onSelect }: { onSelect: (i: number) => void }) {
           Tous les strips
         </span>
         <h2 className="font-serif font-medium text-[clamp(36px,5vw,64px)] leading-[0.98] m-0 text-ink">
-          Onze strips, <em className="italic font-normal">une vie passionnante.</em>
+          Douze strips, <em className="italic font-normal">une vie passionnante.</em>
         </h2>
       </header>
       <ol className="list-none p-0 m-0 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-x-4 md:gap-x-6 gap-y-5 md:gap-y-7">
